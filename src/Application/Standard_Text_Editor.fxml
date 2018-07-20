@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="408.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Standard_Text_Editor_Ct">
+   <children>
+      <JFXTextArea fx:id="stuff" focusColor="LIME" layoutX="15.0" layoutY="46.0" prefHeight="340.0" prefWidth="471.0" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextArea>
+      <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="25.0" prefWidth="498.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Clear" text="Clear" />
+              <MenuItem mnemonicParsing="false" onAction="#Exit" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#About" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
