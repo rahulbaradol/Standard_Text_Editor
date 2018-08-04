@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane stylesheets="/Application/stylesheet.css" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.About">
    <children>
       <Label layoutX="23.0" layoutY="14.0" text="About - Standard Text Editor" underline="true">
          <font>
@@ -26,12 +27,13 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="9.0" layoutY="65.0" text="Version - 1.0" />
+      <Label layoutX="9.0" layoutY="65.0" text="Version - 2.0" />
       <Label layoutX="12.0" layoutY="247.0" text="This application is developed by" />
       <Label layoutX="12.0" layoutY="264.0" text="Rahul Baradol">
          <font>
             <Font size="14.5" />
          </font>
       </Label>
+      <JFXButton layoutX="205.0" layoutY="59.0" onAction="#whatNew" prefHeight="30.0" prefWidth="81.0" text="What's New" />
    </children>
 </AnchorPane>

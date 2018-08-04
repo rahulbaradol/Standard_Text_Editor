@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="408.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Standard_Text_Editor_Ct">
    <children>
-      <JFXTextArea fx:id="stuff" focusColor="LIME" layoutX="15.0" layoutY="46.0" prefHeight="340.0" prefWidth="471.0" unFocusColor="WHITE">
+      <JFXTextArea onKeyPressed="#keyboardFunctioning" fx:id="stuff" focusColor="LIME" layoutX="15.0" layoutY="46.0" prefHeight="340.0" prefWidth="471.0" unFocusColor="WHITE">
          <font>
             <Font size="16.0" />
          </font></JFXTextArea>
@@ -17,6 +17,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
+                  <MenuItem mnemonicParsing="false" onAction="#open" text="Open" />
                   <MenuItem mnemonicParsing="false" onAction="#Clear" text="Clear" />
               <MenuItem mnemonicParsing="false" onAction="#Exit" text="Close" />
             </items>
